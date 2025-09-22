@@ -40,9 +40,9 @@ class TextCleaner:
     def fit(self, X, y=None):
         return self
 
-# Now continue with the rest of your script
-import joblib
-vec = joblib.load("models/tfidf_vectorizer.joblib")
+# # Now continue with the rest of your script
+# import joblib
+# vec = joblib.load("models/tfidf_vectorizer.joblib")
 
 
 # --- Load recommender artifacts ---
