@@ -31,7 +31,9 @@ if os.path.exists(MODEL_PATH) and os.path.exists(CLASS_JSON):
     cnn_model = tf.keras.models.load_model(MODEL_PATH)
     with open(CLASS_JSON) as f:
         class_names = json.load(f)
-
+else:
+    print("⚠️ Model or class_names.json not found at:", MODEL_PATH, CLASS_JSON)
+    
 class TextCleaner:
     def transform(self, X):
         # your transformation logic
