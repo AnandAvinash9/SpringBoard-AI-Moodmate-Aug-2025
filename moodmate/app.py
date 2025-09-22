@@ -22,7 +22,7 @@ EMOJI_MAP = {
 
 
 # --- Load CNN model (if present) ---
-MODEL_PATH = os.path.join("models", "cnn.keras")
+MODEL_PATH = os.path.join("models", "CNN.keras")
 CLASS_JSON = os.path.join("models", "class_names.json")
 
 cnn_model = None
